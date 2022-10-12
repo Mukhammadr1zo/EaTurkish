@@ -1,0 +1,46 @@
+.filter{
+    width: 428px;
+    padding: 50px 40px;
+    background: #BB2339;
+    border-radius: 20px;
+    transition: all 0.3s;
+
+    &__name{
+        font-family: 'Cera Round Pro';
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 54px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+
+    &__item, &__item__active{
+        display: block;
+        padding: 10px 30px;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        background: inherit;
+        border-radius: 100px;
+        margin-bottom: 20px;
+        transition: all 0.3s;
+
+        &:hover{
+            color: #BB2339;
+            background: white;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__item__active{
+        background: white;
+        color: #242424;
+    }
+}

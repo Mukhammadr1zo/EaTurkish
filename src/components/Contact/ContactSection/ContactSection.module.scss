@@ -1,0 +1,32 @@
+.section{
+    width: 100%;
+    padding: 55px 0;
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > span{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title{
+        font-family: 'Cera Round Pro';
+        font-weight: 500;
+        font-size: 64px;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        color: #242424;
+        margin-bottom: 8px;
+    }
+
+    &__contacts{
+        display: flex;
+        gap: 50px;
+    }
+}

@@ -1,0 +1,170 @@
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    &__agg{
+        background: white;
+        width: 100%;
+        height: 371px;
+    }
+
+    &__data{
+        position: relative;
+        width: 100%;
+        padding: 292px 0 40px 0;
+        background:  #BB2339;
+    }
+
+    &__card{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1400px;
+        padding: 64px 297px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #BB2339;
+        box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+        border-radius: 20px;
+        color: #FFFFFF;
+
+        &__title{
+            font-family: 'Cera Round Pro';
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 130%;
+            letter-spacing: 0.04em;
+            text-transform: capitalize;
+            margin-bottom: 25px;
+        }
+
+        &__subtitle{
+            font-family: 'Cera Round Pro';
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 130%;
+            text-align: center; 
+            letter-spacing: 0.03em;
+            text-transform: capitalize;
+            margin-bottom: 24px;
+        }
+
+        &__desc{
+            font-family: 'Open Sans';
+            font-size: 16px;
+            line-height: 175%;
+            letter-spacing: 0.04em;
+            margin-bottom: 64px;
+        }
+
+        &__form{
+            display: flex;
+            align-items: center;
+
+            & > input{
+                width: clamp(100px, 635px, 635px);
+                padding: 12px 19px;
+                margin-right: 32px;
+                font-family: 'Cera Round Pro';
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 175%;
+                letter-spacing: 0.04em;
+                background: inherit;
+                border: 1px solid rgba(245, 239, 219, 0.5);
+                border-radius: 100px;
+                outline: none;
+                color: white;
+
+                &:focus{
+                    border-color: white;
+                }
+                &::placeholder{
+                    color: #AAAAAA;
+                }
+            }
+
+            & > button{
+                height: 52px;
+                padding: 12px 32px;
+                font-family: 'Cera Round Pro';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 175%;
+                letter-spacing: 0.04em;
+                background: inherit;
+                border: 1px solid #FFFFFF;
+                border-radius: 100px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__contacts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 123px;
+        margin-bottom: 82px;
+
+        &__card{
+            max-width: 438px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & > h5{
+                font-family: 'Cera Round Pro';
+                font-size: 32px;
+                line-height: 130%;
+                letter-spacing: 0.04em;
+                text-transform: capitalize;
+                margin-bottom: 24px;
+            }
+
+            & > a, & > p{
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.04em;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                margin-bottom: 11px;
+            }
+
+            & > img{
+                width: 336px;
+                height: 117px;
+                margin-bottom: 32px;
+            }
+
+            & > ul{
+                display: flex;
+                align-items: center;
+                margin-top: 36px;
+                padding: 0;
+                list-style: none;
+
+                & > li{
+                    margin-right: 17px;
+                    &:last-child{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__info{
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+    }
+}

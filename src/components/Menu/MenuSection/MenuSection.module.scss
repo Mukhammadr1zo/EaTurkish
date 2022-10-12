@@ -1,0 +1,17 @@
+.section{
+    width: 100%;
+    padding: 120px 0;
+
+    &__block{
+        display: flex;
+        align-items: flex-start;
+        gap: 36px;
+    }
+
+    &__cards{
+        width: 832px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 36px;
+    }
+}

@@ -1,0 +1,79 @@
+.section {
+    width: 100%;
+    padding: 120px 0;
+    background: #F4F4F4;
+
+    &__carusel {
+        padding-left: 16%;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        gap: 32px;
+        
+        &::-webkit-scrollbar{
+            height: 6px;
+            background: inherit;
+        }
+        &::-webkit-scrollbar-thumb{
+            background: #BB2339;
+            border-radius: 3px;
+        }
+    }
+
+    &__info {
+        max-width: 491px;
+        min-width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &>span {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        font-family: 'Cera Round Pro';
+        font-weight: 700;
+        font-size: 23px;
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+        color: #242424;
+        margin-bottom: 8px;
+    }
+
+    &__name {
+        font-family: 'Cera Round Pro';
+        font-weight: 500;
+        font-size: 48px;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        color: #242424;
+        margin-bottom: 24px;
+    }
+
+    &__desc {
+        font-size: 16px;
+        line-height: 175%;
+        letter-spacing: 0.04em;
+        color: #AAAAAA;
+        margin-bottom: 24px;
+    }
+
+    &__btn {
+        width: 149px;
+        height: 44px;
+        background: inherit;
+        border: 1px solid #BB2339;
+        border-radius: 100px;
+        padding: 8px 30px;
+        font-family: 'Cera Round Pro';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 175%;
+        letter-spacing: 0.04em;
+        color: #242424;
+    }
+
+}

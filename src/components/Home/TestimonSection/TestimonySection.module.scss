@@ -1,0 +1,43 @@
+.section{
+    width: 100%;
+    background: #F4F4F4;
+    padding: 120px 0;
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8px;
+
+        & > h3{
+            font-family: 'Cera Round Pro';
+            font-weight: 700;
+            font-size: 23px;
+            letter-spacing: 0.04em;
+            text-transform: capitalize;
+            color: #242424;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__name{
+        font-family: 'Cera Round Pro';
+        font-size: 48px;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        color: #242424;
+        margin-bottom: 60px;
+    }
+
+    &__cards__block{
+        display: flex;
+        gap: 35px;
+        margin-bottom: 40px;
+    }
+}

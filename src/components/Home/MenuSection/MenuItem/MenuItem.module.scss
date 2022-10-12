@@ -1,0 +1,29 @@
+.item, .item__active{
+    padding: 10px 30px;
+    height: 48px;
+    border: 1px solid #BB2339;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover{
+        color: white;
+        background: #BB2339;
+    }
+}
+
+.item{
+    background: inherit;
+    color: #242424;
+}
+
+.item__active{
+    background: #BB2339;
+    color: white;
+}

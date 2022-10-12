@@ -1,0 +1,52 @@
+.section{
+    width: 100%;
+    padding: 120px 0;
+    background:#F8F8F8;
+
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__title{
+        font-family: 'Cera Round Pro';
+        font-weight: 500;
+        font-size: 48px;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        color: #BB2339;
+    }
+
+    &__btns{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        & > button{
+            padding: 10px 15px;
+            background: inherit;
+            border: 1px solid #646464;
+            border-radius: 6px;
+            &:active{
+                border-color: #BB2339;
+            }
+        }
+    }
+
+    &__cards__block{
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+        scroll-snap-type: mandatory;
+
+        & > div{
+            scroll-snap-align: start;
+        }
+
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+    }
+}

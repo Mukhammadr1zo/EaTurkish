@@ -1,0 +1,55 @@
+.item{
+    width: 513px;
+    background: rgba(255, 255, 255, 0.05);
+
+    &__info{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+
+        &__img{
+            width: 79px;
+            height: 79px;
+            display: block;
+            object-fit: contain;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        &__price{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+        }
+
+        &__name{
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+        }
+    }
+
+    &__btns{
+        display: flex;
+        gap: 2px;
+
+        & > button, & > a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            flex-grow: 1;
+            padding: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+    }
+}
